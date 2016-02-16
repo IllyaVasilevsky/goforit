@@ -1,0 +1,133 @@
+html{
+    background-color: #f9f9f9;
+    height: 100%;
+    padding: 0;
+    }
+p div{
+    font-family: "open Sans";
+}
+body{
+    margin: 0px 65px;
+    border: none 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: white;
+    box-shadow: 2px 0.866px 1px rgba(0, 0, 0, 0.5);
+    }
+
+HEADER{
+    border: none;
+    margin: 40px;
+      }
+
+.head_menu{
+    height: 40px;
+    margin: 40px 0;
+    background-image: -moz-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+    
+     }
+
+.headmenutext{
+  display: block;
+  position: relative;
+  float: left;
+  margin: auto 10px;
+  height: 100%;
+  width: 15%;
+  color: rgb(255, 255, 255);
+  line-height: 2.5;
+  font-family: "open Sans";
+  text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+              }
+
+header #selected_header_menu{
+    background-image: -moz-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
+                            }
+.container{
+    display: inline-block;
+    padding: 0;
+         }
+.right_menu{
+    display: inline-block;
+    margin: 0 40px;
+    position: relative;
+    width: 25%;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #c8c8c8;
+    float: left;
+}
+
+.column{
+    height: 40px;
+    line-height: 3;
+    border-bottom-style: solid;
+    border-bottom-color: #c8c8c8;
+    border-bottom-width: 1px;
+    padding-left: 15%;
+    color: GREY;
+    font-family: "open Sans";
+    font-size: 13PX;
+    }
+
+#selected_menu{
+    padding-left: 25%;
+    background-color: #f9f9f9;
+    height: 40px;
+    color: black;
+}                   
+
+#selected_menu > p{
+   color: black;
+    margin: 0;
+}
+
+.content{
+    
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    float: left;
+    margin: 0 40px 0 0;
+    
+    }
+.content > img{
+    width: 100%;
+}
+.content > p{
+    display: block;
+    font-size: 13px;
+    font-family: "open Sans";
+    text-align: justify;
+}
+
+.foot_menu{
+    background-color: darkgrey;
+    height: 40px;
+    margin: 40px 0;
+}
+.footmenutext{
+  display: block;
+  position: relative;
+  float: left;
+  margin: auto 10px;
+  height: 100%;
+  width: 10%;
+  color: black;
+  line-height: 3;
+  font-size: 13px;
+  font-family: "open Sans";
+  text-align: center;
+}
+.copy{
+    width: 20%;
+    float: right;
+}
+#foot_selected{
+    text-decoration: underline;
+}
