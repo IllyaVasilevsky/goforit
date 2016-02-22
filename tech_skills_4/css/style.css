@@ -1,0 +1,100 @@
+
+* { 
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: #0c739f;
+    }
+
+ul{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    background-color: white;
+               }
+
+
+#clearfix:hover {
+    display: table;
+    content: '';
+    clear: both;
+    }
+
+.main{
+    position: relative;
+    margin: 0 13% 0 15%;
+    clear: both;
+    }
+
+.content{
+    position: absolute;
+    clear: both;
+}
+.bg-1{
+    position: absolute;
+    width: 200%;
+    margin-left: -50%;
+         }
+.bg-2{
+    height: auto;
+}
+
+
+
+
+header .countries li{
+    float: left;
+    width: 15%;
+    text-align: center;
+    }
+
+#logo{
+    display: block;
+    margin-left: 27%;
+    float: left;
+    }
+#main_img{
+    display: block;
+    position: relative;
+    clear: both;
+    width: 100%;
+}
+.contacts{
+    float: right;
+    margin-right: 4%;
+        }
+
+.countries{
+    float: right;
+    margin:1% 4% 0;
+    clear: right;
+}
+
+.menu_up > li{
+    position: relative;
+    float: left;
+    height: 100%;
+    margin: 0 1%;
+    overflow: hidden;
+}
+.menu_up{
+    clear: both;
+    height: 30px;
+    background-color: dimgray;
+}
+.menu_up p{
+    display: block;
+    height: 30px;
+    text-align: center;
+    line-height: 185%;
+    }
+
+.fon3 {
+    
+}
+
+
