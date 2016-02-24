@@ -8,9 +8,9 @@
     <body>
         
         
-<div class="main" > 
+<div class="main" class=clearfix > 
     <header > 
-      <div class="bg-1">  <img id="logo" src="img/logo.png">  </div>
+       <div class="clearfix bg" id=bg-1> <img id="logo" src="img/logo.png">  
         <Ul class=contacts>
             <li>Наши контакты:</li>
             <li>+098-765-4321</li>
@@ -25,41 +25,40 @@
             <li class=country><img src="img/flags/butan.png"><p>Бутан</p></li>
             <li class=country><img src="img/flags/sri-lanka.png"><p>Шри-Ланка</p></li>
             <li class=country><img src="img/flags/maldives.png"><p>Мальдивы</p></li>            
-        </ul>
-       <div class="bg-2"> <img src="img/homework4.jpg" id=main_img>         
-  
-          <ul class="menu_up" >
-            <li ><p>Главная</p></li>
-           <li><p>Путешествие</p><ul id="travel">
+           </ul></div>
+      <div class="clerfix bg" id=bg-2> <img src="img/homework4.jpg" id=main_img>         
+            <ul class="menu_up" >
+            <li class=dropdown-top><p class=dropdown-top>Главная</p></li>
+           <li class=dropdown-top><p class=dropdown-top>Путешествие</p>
+               <ul class="dropdown">
                     <li>Путешествие 1</li>
                     <li>Путешествие 2</li>
                     <li>Путешествие 3</li>
                     <li>Путешествие 4</li>
                 </ul></li>
-            <li ><p>Услуги</p>
-                <ul id="service">
+            <li class=dropdown-top><p class=dropdown-top>Услуги</p>
+                <ul class="dropdown">
                     <li>Услуга 1</li>
                     <li>Услуга 2</li>
                     <li>Услуга 3</li>
                     <li>Услуга 4</li>
                 </ul></li>
-            <li><p>Партнерам</p><ul id="partner">
+            <li class=dropdown-top><p class=dropdown-top>Партнерам</p>
+                <ul class="dropdown">
                     <li>Партнерам 1</li>
                     <li>Партнерам 2</li>
                     <li>Партнерам 3</li>
                     <li>Партнерам 4</li>
                 </ul></li>
-            <li><p>Отзывы клиентов</p></li>
-            <li><p>О нас</p></li>
-             <li><p> Контакты </p></li>
-        </ul>
-           </div> 
-        </header>
-    <div id="clearfix"></div>
-      
-     
+            <li class=dropdown-top><p class=dropdown-top>Отзывы клиентов</p></li>
+            <li class=dropdown-top><p class=dropdown-top>О нас</p></li>
+             <li class=dropdown-top><p class=dropdown-top> Контакты </p></li>
+          </ul></div>
+                </header>
    
-          <div class="fon3"> <!-- фон для правой колонки (желтый) -->
+    
+      
+    <div class="bg clearfix" id=bg-3><div class="fon3"> <!-- фон для правой колонки (желтый) -->
       <div class="fon2"> <!-- фон для центральной колонки (красный)-->
       <div class="fon1"> <!-- фон для левой колонки (синий) -->
    
@@ -78,7 +77,9 @@
             </div>
             </div>
             </div>
-        
+        </div>
+        <footer><p>Copyright</p></footer>
+    
         </div>
     
     </body>
