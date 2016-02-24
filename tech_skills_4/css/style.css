@@ -1,84 +1,35 @@
-
+/* общие свойства */
 * { 
     margin: 0;
     padding: 0;
   }
 
-body {
-    background-color: #0c739f;
-    }
-
-ul{
-    list-style: none;
-}
-
-header{
-    width: 100%;
-    background-color: white;
-               }
-
-footer p{
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-}
 .clearfix::after {
     display: table;
     content: '';
     clear: both;
     }
-
-.main{
-    position: relative;
-    margin: 0 13% 0 15%;
-    clear: both;
+ul{
+    list-style: none;
+}
+body {
+    background-color: #0c739f;
+    font-family: tahoma;
+    font-size: 14px;
     }
-
-
-.bg{
-  position: relative;
-  background-color: transparent;
-   
+h1{
+    font-size: 18px;
+    color: #424c43;
+    text-align: center;
 }
-#bg-1:before {
-     content: " ";
-    position: absolute;
-    top: 0;
-    left: -30%;
-    width: 148%;
-    height: 99%;
-    z-index: -1;
-    background-color: brown;
-    border-bottom: 2px solid black;
+/* -общие свойства */
 
-}
-
-#bg-2:before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: -30%;
-    width: 148%;
-    height: 100%;
-    z-index: -1;
-    background-color: green;
-    border-bottom: 2px solid grey;
-}
-#bg-3:before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: -30%;
-    width: 148%;
-    height: 100%;
-    z-index: -1;
-    background-color: red;
-    border-bottom: 2px solid grey;
-}
-
-
-
+/* header */
+header{
+    width: 100%;
+    background-color: white;
+    color: #128aa7;
+      }
 header .countries li{
     float: left;
     width: 15%;
@@ -99,14 +50,21 @@ header .countries li{
 .contacts{
     float: right;
     margin-right: 4%;
+    font-size: 12px;
         }
 
 .countries{
     float: right;
-    margin:1% 4% 0;
+    margin:5% 4% 0;
     clear: right;
+    font-size: 10px;
+    text-decoration: underline;
 }
-
+li.country{
+    display: block;
+    margin-left: 1%;
+}
+/* горизонтальное меню */
 .menu_up > li{
     position: relative;
     float: left;
@@ -117,14 +75,17 @@ header .countries li{
 .menu_up{
     clear: both;
     height: 30px;
-    background-color: dimgray;
+    background: linear-gradient(to bottom, #373737 0%,#303030 100%); 
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 14px;
 }
 .menu_up p{
     display: block;
     height: 30px;
     text-align: center;
     line-height: 185%;
-    }
+        }
 
 ul.dropdown {
     position: absolute;
@@ -135,91 +96,127 @@ ul.menu_up li.dropdown-top:hover .dropdown {
  display: block;
  left: 0;
  margin-left: 0;
+ padding-left: 5%;
  width: 140%;
-    z-index: 1;
+ z-index: 1;
+ background-color: #303030;
+ box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+ line-height: 1.5;
+ 
+ }
+/* -горизонтальное меню */
+/* -header */
+
+/* общий контейнер и фон с градиентом */
+.main{
+    position: relative;
+    margin: 0 13% 0 15%;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    clear: both;
+    }
+
+.bg{
+  position: relative;
+  background-color: transparent;
  }
 
-.fon1 {  /* фон для левой колонки (синий) */
+#bg-1:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 148%;
+    height: 95%;
+    z-index: -1;
+    margin-top: 4%;
+    background: linear-gradient(to bottom, #11cee1 0%,#ffffff 100%); 
+    border-top: 2px solid #5ef0ff;
+            }
 
+#bg-2:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 148%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #41c6d3 0%,#108dae 100%); 
+    }
+
+#bg-3:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 148%;
+    height: 100%;
+    z-index: -1;
+   background: linear-gradient(to bottom, #108dae 0%,#0c739f 100%); 
+   }
+/* -общий контейнер и фон с градиентом */
+
+/* колонки */
+.fon1 {  
 width: 100%;
-
-background: #3d2af0;
-
-float: left; /* делаем все обертки плавающими блоками чтобы избежать добавления блока с clear: both; */
-
-position: relative; /* чтобы иметь возможность сместить фон */
-
-right: 30%; /* обнажаем красный фон для центральной колонки. 30% - ширина центральной колонки */
-
+background: #edeef0;
+float: left; 
+position: relative; 
+right: 30%; 
 }
 
-.fon2 {/* фон для центральной колонки (красный) */
-
+.fon2 {
 width: 100%;
-
-background: #e34456;
-
+background: #ffffff;
 float: left;
-
 position: relative;
-
-right: 40%; /* обнажаем желтый фон для правой колонки. 40% - ширина правой колонки */
-
+right: 40%; 
 }
 
-.fon3 {/* фон для правой колонки (желтый) */
-
+.fon3 {
 width: 100%;
-
-background: #e3e244;
-
+background: #edeef0;
 float: left;
-    overflow: hidden;
-
+overflow: hidden;
+    
 }
 
 .leftColumn {
-
 width: 30%;
-
 float: left;
-
-overflow: hidden; /* страховка от ломки верстки объектами шире размера колонки-родителя */
-
+overflow: hidden; 
 position:relative;
-
-left:70%; /* возвращаем колонки с контентом на свои позиции. 70% - сумма смещений оберток fon1 и fon2 */
-
+left:70%; 
 }
 
 .centerColumn {
-
 width: 30%;
-
 float: left;
-
 overflow: hidden;
-
 position:relative;
-
 left:70%;
-
 }
 
 .rightColumn {
-
 width: 39%;
-
 float: left;
-
 overflow: hidden;
-
 position:relative;
-
 left:70%;
-
+border-left: 1px solid #c7cacf;
 }
+/* -колонки */
 
+/* футер */
+footer p{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+        }
+/* футер */
 
 
 
