@@ -33,12 +33,14 @@ HEADER{
 
 .headmenutext{
   display: table-cell; 
-    vertical-align: middle;
+  vertical-align: middle;
   position: relative;
   float: left;
   margin: auto;
   height: 100%;
   width: 15%;
+  border-left: 1px solid rgba(0,0,0,0);
+  border-right: 1px solid rgba(0,0,0,0);
   color: rgb(255, 255, 255);
   line-height: 2.5;
   font-family: "open Sans";

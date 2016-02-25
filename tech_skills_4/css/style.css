@@ -34,6 +34,7 @@ header .countries li{
     float: left;
     width: 15%;
     text-align: center;
+    z-index: 1;
     }
 
 #logo{
@@ -69,24 +70,32 @@ li.country{
     position: relative;
     float: left;
     height: 100%;
-    margin: 0 1%;
+    margin: 0;
+    width: 12%;
    
 }
 .menu_up{
     clear: both;
     height: 30px;
+    padding-left: 2%;
+    border-bottom: 1px solid black;
     background: linear-gradient(to bottom, #373737 0%,#303030 100%); 
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
     color: white;
-    font-size: 14px;
+    font-size: 100%;
 }
 .menu_up p{
-    display: block;
+    display: inline-block;
     height: 30px;
-    text-align: center;
+    text-align: left;
     line-height: 185%;
+    padding-left: 5%;
         }
 
+  .dropdown-top > img {
+    display: inline;
+    margin-left: 2px;
+}
 ul.dropdown {
     position: absolute;
     left: -10000px;
@@ -97,7 +106,7 @@ ul.menu_up li.dropdown-top:hover .dropdown {
  left: 0;
  margin-left: 0;
  padding-left: 5%;
- width: 140%;
+ width: 100%;
  z-index: 1;
  background-color: #303030;
  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
@@ -162,7 +171,7 @@ width: 100%;
 background: #edeef0;
 float: left; 
 position: relative; 
-right: 30%; 
+right: 60%; 
 }
 
 .fon2 {
@@ -170,7 +179,7 @@ width: 100%;
 background: #ffffff;
 float: left;
 position: relative;
-right: 40%; 
+right: 20%; 
 }
 
 .fon3 {
@@ -182,11 +191,11 @@ overflow: hidden;
 }
 
 .leftColumn {
-width: 30%;
+width: 20%;
 float: left;
 overflow: hidden; 
 position:relative;
-left:70%; 
+left:80%; 
 }
 
 .centerColumn {
@@ -194,15 +203,15 @@ width: 30%;
 float: left;
 overflow: hidden;
 position:relative;
-left:70%;
+left:80%;
 }
 
 .rightColumn {
-width: 39%;
+width: 19%;
 float: left;
 overflow: hidden;
 position:relative;
-left:70%;
+left:110%;
 border-left: 1px solid #c7cacf;
 }
 /* -колонки */
