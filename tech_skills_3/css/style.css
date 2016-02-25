@@ -14,7 +14,9 @@ body{
     background-color: white;
     box-shadow: 2px 0.866px 1px rgba(0, 0, 0, 0.5);
     }
-
+ul {
+    list-style: none;
+}
 HEADER{
     border: none;
     margin: 40px;
@@ -22,18 +24,19 @@ HEADER{
 
 .head_menu{
     height: 40px;
+    padding: 0;
     margin: 40px 0;
     background-image: -moz-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
-    
-     }
+         }
 
 .headmenutext{
-  display: block;
+  display: table-cell; 
+    vertical-align: middle;
   position: relative;
   float: left;
-  margin: auto 10px;
+  margin: auto;
   height: 100%;
   width: 15%;
   color: rgb(255, 255, 255);
