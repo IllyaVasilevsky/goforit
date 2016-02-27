@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+table{
+    margin: auto;
+    margin-top: 20%;
+    border: none;
+    border-collapse: collapse;
+    background-color: white;
+    width: 500px;
+    height: 541px;
+    }
+
+/* borders*/
+td{
+    margin: 0;
+    padding: 0;
+    border: 10px solid black;
+
+    }
+.first_col {
+    border-left: 0;
+    }
+#top td{
+    border-top: 0;
+    }
+.last_col{
+    border-right: 0;
+    }
+#bottom td, #fifth .first_col, #sixth .first_col{
+    border-bottom: 0;
+    }  /* borders*/
+/*size*/
+ 
+/*height*/
+#top{  height: 52px;  }
+
+#second, #third{  height: 139px; }
+
+#fourth, #fifth{  height: 69px; }
+
+#sixth{  height: 37px; }
+
+#bottom{   height: 37px; } 
+/*HEIGHT*/
+
+/*row width*/
+/*first raw*/
+#top #xy{  width: 121px; }
+
+#top #xyy {width: 199px;}
+
+#top .last_col { width: 164px; }
+/*first raw*/
+
+/*second raw*/
+#second .first_col{ width: 53px;}
+
+/*third raw*/
+#third #xxx{  width: 77px; }
+
+#third .last_col{  width: 77px; }
+/*third raw*/
+
+/*fourth raw*/
+#fourth #x {width: 138px;}
+#fourth #xx {width: 138px;}
+/*fourth raw*/
+/*HEIGHT*/
+/*color*/
+.red { background-color: #ff5b2e }
+.yellow{ background-color: #ffed71 }
+.blue{background-color: #054480}
+.black{background-color: black}
+
+
+
