@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.clearfix{
+    height: 0px;
+}
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+    }
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #07508f;
+}
+
+/*header*/
+.header1{
+    height: 38px;
+    padding-right: 1%;
+         }
+
+.headermenu {
+    display: inline-block;
+    padding: 0 2%;
+    line-height: 38px;
+    float:right;
+    color: #60b5ed;
+   }
+.headermenu:hover{
+   background-color: #4eabda;
+    color: white;
+    }
+
+#enter, #ofertas{
+    color: white;
+}
+#enter{
+    line-height: 36px;
+    border: 1px solid #56a2dc;
+    background: linear-gradient(to bottom, #2e7ac4 0%,#51b1dc 100%);
+}
+#ofertas{
+    border-left: 1px solid #56a2dc;
+   
+}
+/*header*/
+
+
+.background{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    background-image: url(../img/Background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*center menu*/
+.data{
+    margin: 15% auto;
+    height: 30%;
+    width: 35%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+
+#headofmenu{ border-bottom: 1px solid gray;
+text-align: center;
+    margin-bottom: 5%;
+}
+#center{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+/*facebook button*/
+.facebook{
+    height: 40px;
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: #2f4473;
+    background-image: linear-gradient(to bottom, #3d5593 0%,#2f4473 100%);
+    color: white;
+}
+.facebook p, img{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1px;
+}
+.facebook img{
+    float: left;
+    height: 100%;
+    border-right: 1px solid #213c71;
+    box-shadow: 1px 0  1px #476299;
+}
+.facebook p{
+    line-height: 40px;
+}
+.facebook p:firstchild{
+    border-left: 1px solid blue;
+}
+#bold{
+    font-weight: bold;
+}
+.button{
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+/*facebook button*/
+
+/*hr*/
+#hrtable{
+    width: 75%;
+    margin: 5% auto;
+}
+#hr1{
+    border-bottom: 1px solid gray;
+    width: 47%
+}
+#hrtext{
+    text-align: center;
+    vertical-align: middle;
+}
+/*hr*/
+
+/*data&password*/
+.textfield{
+    display: block;
+    margin: 5% auto;
+    padding-left: 5%;
+    width: 70%;
+    height: 30px;
+    background-color: black;
+    border: 0;
+    border-bottom: 1px solid #484848;
+    color: grey;
+    outline: 0;
+    }
+.textfield:focus{
+    border: 0;
+    background-color: #1b5288;
+    box-shadow: 0px 0px 4px 5px rgba(48, 172, 255, 0.5),
+               inset 0px 0px 1px 1px rgba(16, 40, 81, 0.5);
+}
+
+/*placeholder*/
+.textfield
+::-webkit-input-placeholder {color:#c3c3c3;}
+::-moz-placeholder          {color:#c3c3c3;}
+:-ms-input-placeholder      {color:#c3c3c3;}
+/*placeholder*/
+/*data&password*/
+
+.checkbox {
+    margin: 5% auto;
+    width: 75%;
+}
+/*disclaimer*/
+.disclaimer{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.create{
+    width: 50%;
+    height: 30px;
+    margin: 5% auto;
+    
+    background: linear-gradient(to bottom, #67c6e6 0%,#2e7ac4 100%);
+    color: white;
+    border: 5px;
+    border-radius: 3px;
+    }
+/*center menu*/
