@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans", "Arial Black", sans-serif;
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+}
+.clearfix{
+    display: table;
+    content: '';
+    clear: both;
+}
+/*header menu*/
+header{
+    max-width: 909px;
+    height: 34px;
+    margin: 17px 0 0 0;
+}
+header *{
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: middle;
+}
+/*phones*/
+.phones p{
+    height:20px;
+    line-height: 20px;
+}
+.phone_icon{
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient( 90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
+}
+/*phones*/
+
+/*login*/
+.login{
+    height: 24px;
+    max-width: 493px;
+    padding: 0 5px;
+    margin: 0 17px;
+    background-color: antiquewhite;
+    vertical-align: middle;
+    background-image: linear-gradient(to bottom, #1f6787 0%,#0d3458 100%);
+    border-radius: 3px;
+}
+.login input{
+    max-width: 113px;
+    font-size: 11px;
+    font-family: "Lucida Sans";
+    border: 0;
+}
+#button_login{
+   color: white;
+   background-color: rgba(255,255,255,0);
+   text-decoration: underline;
+}
+.login a{
+    font-size: 12px;
+    color: #bfbfbf;
+    text-decoration: underline;
+}
+/*login*/
+
+nav{
+    height: 19px;
+    border: 1px solid #c0c7c9;
+    border-radius: 19px;    
+}
+nav a{
+    margin-top: -9px;
+    padding: 0 2px;
+    text-decoration: underline;
+}
+
+/*main menu*/
+.main_menu{
+    height: 33px;
+    width: 100%;
+    max-width: 908px;
+    margin-top:-3px;
+    background-image: linear-gradient(to bottom, #3a4046 0%,black 100%);
+    border-radius: 4px;
+}
+.main_menu *{
+    display: inline-block;
+    vertical-align: middle;
+}
+        
+
+.top_menu{
+    margin: 0 50px;
+}
+.top_menu li{
+    line-height: 26px;
+    font-size: 13px;
+    
+    
+}
+.top_menu a{
+    display: inline-block;
+    height: 27px;
+    padding: 0 17px;
+    color: #838b8f;
+    font-size: 13px;
+    
+}
+.top_menu a:hover{
+    color: white;
+    font-size: 13px;
+    background-image: linear-gradient(to bottom, #25617b 0%,#0c3357 100%);
+    border-radius: 27px;
+}
+#shop_cart *{
+    line-height: 33px;
+}
+#shop_cart{
+    color: #838b8f;
+    font-size: 11px;
+}
+#shop_cart span{
+    font-size: 12px;
+    color: #0e5383;
+    }
+/*main menu*/
+
+/*main select*/
+.car_select, .tire_select, .disk_select{
+    height: 132px;
+    border: 1px solid #b0b0b1;
+    border-radius: 26px;
+    float: left;
+}
+.car_select section, .tire_select section, .disk_select section{
+    display: inline-block;
+}
+
+

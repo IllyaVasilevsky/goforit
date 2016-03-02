@@ -10,14 +10,14 @@
     <header>
         <div class="phones">
         <img src="img/icon/phone.png" class=phone_icon>
-        <p id=phone_number>(044) 123-45-67 (044) 567-89-10</p>
+        <p id=phone_number> (044) 123-45-67 (044) 567-89-10</p>
         </div>
         <form class=login method="post"> 
         <img src="img/icon/login_man.png">
         <input type="text" placeholder="Логин">
         <input type="password" placeholder="Пароль">
-            <input type="submit" value="Вход">
-            <input type="submit" value="Регистрация">
+            <input id=button_login type="submit" value="Вход">
+            <input id=button_login type="submit" value="Регистрация">
             <a href="/">Забыли пароль?</a>
         </form>
         <nav>
@@ -29,16 +29,16 @@
         <main>
             <img src="img/banner.png" id=banner>
         <section class=main_menu>
-            <menu>
+            <ul class=top_menu>
             <li><a href="/">О КОМПАНИ</a></li>    
             <li><a href="/">ОПЛАТА</a></li>    
             <li><a href="/">ДОСТАВКА</a></li>
             <li><a href="/">СТАТЬИ</a></li>
             <li><a href="/">КОНТАКТЫ</a></li>
-            </menu>
+            </ul>
             <section id=shop_cart> 
                 <img src="img/icon/shop_cart.png">
-                <p>Товаров <span id=digit>0</span> На сумму <span id=digit>0,00 грн.</span></p>
+                <p>Товаров <span id=digit>0</span> &nbsp; На сумму &nbsp;<span id=digit>0,00 грн.</span></p>
             </section>
         </section>
           <section class="main_select">
@@ -158,9 +158,9 @@
                <input type="submit" value="Поиск..." id=search_button>
            </section>
      </section>  
-   
-       <aside class="left">
-       <h1 class="sidebar_header"><img src="img/icon/catalog.png">КАТАЛОГ ПРОДУКЦИИ</h1>
+            <div class=clearfix></div>
+       <aside class="leftt">
+       <h1 class="sidebar_header"><img src="img/icon/catalog.png">КАТАЛОГ ПРОДУКЦИИ:</h1>
        <h1 class="sidebar_header"><img src="img/icon/round.png">ШИНЫ</h1>
        <ul class="sidebar_list">
            <li>Наименование 1</li>
@@ -187,7 +187,7 @@
     </aside>        
             
             <aside class="right">
-               <h1 class="sidebar_header h1shadow"><img src="img/icon/round.png">БРЕНДЫ</h1>
+               <h1 class="sidebar_header h1shadow"><img src="img/icon/round.png">БРЕНДЫ:</h1>
                
                 <h1 class="sidebar_header"><img src="img/icon/round.png">ШИНЫ</h1>
                 <form>
