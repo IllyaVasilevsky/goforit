@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zazor</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+    <header>
+        <div class="phones">
+        <img src="img/icon/phone.png" class=phone_icon>
+        <p id=phone_number>(044) 123-45-67 (044) 567-89-10</p>
+        </div>
+        <form class=login method="post"> 
+        <img src="img/icon/login_man.png">
+        <input type="text" placeholder="Логин">
+        <input type="password" placeholder="Пароль">
+            <input type="submit" value="Вход">
+            <input type="submit" value="Регистрация">
+            <a href="/">Забыли пароль?</a>
+        </form>
+        <nav>
+        <a href="/"><img src="img/icon/home.png"></a>
+        <a href="/"><img src="img/icon/site_map.png"></a>
+        <a href="/"><img src="img/icon/mail.png"></a>
+        </nav>
+        </header>
+        <main>
+            <img src="img/banner.png" id=banner>
+        <section class=main_menu>
+            <menu>
+            <li><a href="/">О КОМПАНИ</a></li>    
+            <li><a href="/">ОПЛАТА</a></li>    
+            <li><a href="/">ДОСТАВКА</a></li>
+            <li><a href="/">СТАТЬИ</a></li>
+            <li><a href="/">КОНТАКТЫ</a></li>
+            </menu>
+            <section id=shop_cart> 
+                <img src="img/icon/shop_cart.png">
+                <p>Товаров <span id=digit>0</span> На сумму <span id=digit>0,00 грн.</span></p>
+            </section>
+        </section>
+          <section class="main_select">
+           <section class="car_select">
+              <h1 class=search_header id=center>Поиск по автомобилю</h1>
+              
+               <section id=search_car_disk_text>
+                   <h2 class=h2_car id=disk>Диски</h2>
+                   <p class=search_menu_text>Марка <span>авто</span></p>
+                   <p class=search_menu_text>Модель <span>автомобиля</span></p>
+                   <p class=search_menu_text>Год выпуска <span>автомобиля</span></p>
+                   <p class=search_menu_text>Комплектация</p>
+               </section>
+                 
+                  <section id=search_car_disk_drop>
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+               </section>
+                  
+                  <section id=search_car_tire_text>
+                   <h2 class=h2_car id=tire>Шины</h2>
+                   <p class=search_menu_text>Марка <span>авто</span></p>
+                   <p class=search_menu_text>Модель <span>автомобиля</span></p>
+                   <p class=search_menu_text>Год выпуска <span>автомобиля</span></p>
+                   <p class=search_menu_text>Комплектация</p>
+                  </section>
+                  
+                  <section id=search_car_tire_drop>
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+                   <ul class=dropdown id=hor>
+                   <li></li>
+                   <li id= slash>/</li>
+                   </ul>
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+                   
+               </section>
+                                 
+               <input type="submit" value="Поиск..." id=search_button>
+            </section>  
+               
+           <section class="tire_select">
+              <h1 class=search_header id=left>Поиск шин</h1>
+              
+               <section id=search_tire_text>
+                   <p class=search_menu_text>Размер</p>
+                   <p class=search_menu_text>R</p>
+                   <p class=search_menu_text>Сезон</p>
+               </section>
+                    
+               <section id=search_tire_drop>
+                  
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+                   <ul class=dropdown id=hor>
+                   <li></li>
+                   </ul>
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+                   <input type="checkbox"> <span>Лето</span>
+                   <input type="checkbox"> <span>Зима</span>
+                   <input type="checkbox"> <span>Всесез</span>
+              
+               </section>
+               
+               <input type="submit" value="Поиск..." id=search_button>
+           </section>
+           
+            <section class="disk_select">
+              <h1 class=search_header id=left>Поиск дисков</h1>
+              
+               <section id=search_disk_text>
+                   <p class=search_menu_text>Диаметр <span>диска:</span></p>
+                   <p class=search_menu_text>Количество <span>крепежных отверстий</span></p>
+                   <p class=search_menu_text>Диаметр <span>расположения крепежных отверстий:</span></p>
+               </section>
+                    
+             <section id=search_disk_drop>
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+             </section>    
+              
+              <section id=search_disk_et>
+                   <p class=search_menu_text>ДЦО <span>Диаметр центрального отверстия:</span></p>
+                         <ul class=dropdown>
+                         <li></li>
+                         </ul>
+                   <p class=search_menu_text>ЕТ<span>(вылет диска):</span></p>
+                   <ul class=dropdown>
+                   <li></li>
+                   </ul>
+                   
+                </section>    
+               
+               <input type="submit" value="Поиск..." id=search_button>
+           </section>
+     </section>  
+   
+       <aside class="left">
+       <h1 class="sidebar_header"><img src="img/icon/catalog.png">КАТАЛОГ ПРОДУКЦИИ</h1>
+       <h1 class="sidebar_header"><img src="img/icon/round.png">ШИНЫ</h1>
+       <ul class="sidebar_list">
+           <li>Наименование 1</li>
+           <li>Наименование 2</li>
+           <li>Наименование 3</li>
+           <li>Наименование 4</li>
+       </ul>
+       
+        <h1 class="sidebar_header"><img src="img/icon/round.png">ДИСКИ</h1>
+       <ul class="sidebar_list">
+           <li>Наименование 1</li>
+           <li>Наименование 2</li>
+           <li>Наименование 3</li>
+           <li>Наименование 4</li>
+       </ul> 
+       
+       <h1 class="sidebar_header"><img src="img/icon/round.png">БОЛТЫ</h1>
+       <ul class="sidebar_list">
+           <li>Наименование 1</li>
+           <li>Наименование 2</li>
+           <li>Наименование 3</li>
+           <li>Наименование 4</li>
+       </ul> 
+    </aside>        
+            
+            <aside class="right">
+               <h1 class="sidebar_header h1shadow"><img src="img/icon/round.png">БРЕНДЫ</h1>
+               
+                <h1 class="sidebar_header"><img src="img/icon/round.png">ШИНЫ</h1>
+                <form>
+                
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 1</p>
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 2</p>
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 3</p>
+                <h1 class="sidebar_header"><img src="img/icon/round.png">ДИСКИ</h1>
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 1</p>
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 2</p>
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 3</p>
+                <input type=submit value=ВЫБРАТЬ>
+                </form>
+            </aside>
+            
+            <section class=goods>
+                <figure class="goods_inner">
+                <figcaption class=goods_name>Goodyear <span>Ultra Grip Extreme</span></figcaption> <img src="img/tire/gy_ug_e.png"><figcaption class=goods_price>90.00 грн.</figcaption>
+                </figure>
+                
+                <figure class="goods_inner">
+                <figcaption class=goods_name>Nokian <span>Hakkapelita R</span></figcaption> <img src="img/tire/nok_hak_r.png"><figcaption class=goods_price>115.00 грн.</figcaption>
+                </figure>
+                
+                <figure class="goods_inner">
+                <figcaption class=goods_name>Hankook <span>K 708 155/65 R14</span></figcaption> <img src="img/tire/hank708.png"><figcaption class=goods_price>393.00 грн.</figcaption>
+                </figure>
+                
+                <figure class="goods_inner">
+                <figcaption class=goods_name>Goodyear <span>Ultra Grip Extreme</span></figcaption> <img src="img/tire/gy_ug_e.png"><figcaption class=goods_price>90.00 грн.</figcaption>
+                </figure>
+                
+                <figure class="goods_inner">
+                <figcaption class=goods_name>Nokian <span>Hakkapelita R</span></figcaption> <img src="img/tire/nok_hak_r.png"><figcaption class=goods_price>115.00 грн.</figcaption>
+                </figure>
+                
+                <figure class="goods_inner">
+                <figcaption class=goods_name>Hankook <span>K 708 155/65 R14</span></figcaption> <img src="img/tire/hank708.png"><figcaption class=goods_price>393.00 грн.</figcaption>
+                </figure>
+                
+                <figure class="goods_inner">
+                <figcaption class=goods_name>Goodyear <span>Ultra Grip Extreme</span></figcaption> <img src="img/tire/gy_ug_e.png"><figcaption class=goods_price>90.00 грн.</figcaption>
+                </figure>
+                
+                <figure class="goods_inner">
+                <figcaption class=goods_name>Nokian <span>Hakkapelita R</span></figcaption> <img src="img/tire/nok_hak_r.png"><figcaption class=goods_price>115.00 грн.</figcaption>
+                </figure>
+                
+                <figure class="goods_inner">
+                <figcaption class=goods_name>Hankook <span>K 708 155/65 R14</span></figcaption> <img src="img/tire/hank708.png"><figcaption class=goods_price>393.00 грн.</figcaption>
+                </figure>
+            </section>
+            <section class=main_footer>
+                <a href="/">&lt;&lt;</a>
+                <a href="/">&lt;</a>
+                <a href="/">1...</a>
+                <a href="/">2...</a>
+                <a href="/">3...</a>
+                <a href="/">4...</a>
+                <a href="/">&gt;</a>
+                <a href="/">&gt;&gt;</a>
+                <div class="tires_logo_footer"><img src="img/brand/toyo.png"><img src="img/brand/bridge.png"><img src="img/brand/conti.png"><img src="img/brand/cooper.png"><img src="img/brand/avon.png"><img src="img/brand/tire_factory.png"><img src="img/brand/pirelli.png"><img src="img/brand/dunlop.png"></div>
+            </section>
+        </main>
+        <footer>
+            <a>О Компании</a>
+            <a>Доставка</a>
+            <a>Статьи</a>
+            <a>Контакты</a>
+            <p> Создание сайта &copy; Global Vision</p>
+        </footer>
+    
+    
+    
+    </body>
+</html>
