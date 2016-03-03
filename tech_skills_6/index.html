@@ -44,48 +44,78 @@
           <section class="main_select">
            <section class="car_select">
               <h1 class=search_header id=center>Поиск по автомобилю</h1>
-              
+              <h2 class=h2_car id=disk>Диски</h2>
                <section id=search_car_disk_text>
-                   <h2 class=h2_car id=disk>Диски</h2>
-                   <p class=search_menu_text>Марка <span>авто</span></p>
-                   <p class=search_menu_text>Модель <span>автомобиля</span></p>
-                   <p class=search_menu_text>Год выпуска <span>автомобиля</span></p>
-                   <p class=search_menu_text>Комплектация</p>
+                   <ul>
+                       <li class=search_menu_text>Марка <span>авто</span></li>
+                       <li class=search_menu_text>Модель <span>автомобиля</span></li>
+                       <li class=search_menu_text>Год выпуска <span>автомобиля</span></li>
+                       <li class=search_menu_text>Комплектация</li>
+                   </ul>
                </section>
                  
-                  <section id=search_car_disk_drop>
-                   <ul class=dropdown>
-                   <li></li>
+                <section id=search_car_disk_drop>
+                   <ul class="dropdown"> 
+                           <li>111</li>
+                           <li>111</li>
+                           <li>111</li>
+                           <li>111</li>
+                   </ul>
+                         
+                   <ul class="dropdown">
+                           <li>222</li>
+                           <li>222</li>
+                           <li>222</li>
+                           <li>222</li>
+                   </ul>
+                   <ul class="year dropdown">
+                           <li>333</li>
+                           <li>333</li>
+                           <li>333</li>
+                           <li>333</li>
                    </ul>
                    <ul class=dropdown>
-                   <li></li>
-                   </ul>
-                   <ul class=dropdown>
-                   <li></li>
-                   </ul>
-                   <ul class=dropdown>
-                   <li></li>
+                           <li>444</li>
+                           <li>444</li>
+                           <li>444</li>
+                           <li>444</li>
                    </ul>
                </section>
-                  
+                  <h2 class=h2_car id=tire>Шины</h2>
                   <section id=search_car_tire_text>
-                   <h2 class=h2_car id=tire>Шины</h2>
-                   <p class=search_menu_text>Марка <span>авто</span></p>
-                   <p class=search_menu_text>Модель <span>автомобиля</span></p>
-                   <p class=search_menu_text>Год выпуска <span>автомобиля</span></p>
-                   <p class=search_menu_text>Комплектация</p>
+                   <ul>
+                   <li class=search_menu_text>Марка <span>авто</span></li>
+                   <li class=search_menu_text>Модель <span>автомобиля</span></li>
+                   <li class=search_menu_text>Год выпуска <span>автомобиля</span></li>
+                   <li class=search_menu_text>Комплектация</li>
+                   </ul>
                   </section>
                   
                   <section id=search_car_tire_drop>
-                   <ul class=dropdown>
-                   <li></li>
+                  <ul class="dropdown"> 
+                           <li>111</li>
+                           <li>111</li>
+                           <li>111</li>
+                           <li>111</li>
                    </ul>
-                   <ul class=dropdown id=hor>
-                   <li></li>
-                   <li id= slash>/</li>
+                         
+                   <ul class="dropdown">
+                           <li>222</li>
+                           <li>222</li>
+                           <li>222</li>
+                           <li>222</li>
+                   </ul>
+                   <ul class="dropdown year">
+                           <li>333</li>
+                           <li>333</li>
+                           <li>333</li>
+                           <li>333</li>
                    </ul>
                    <ul class=dropdown>
-                   <li></li>
+                           <li>444</li>
+                           <li>444</li>
+                           <li>444</li>
+                           <li>444</li>
                    </ul>
                    
                </section>
@@ -98,8 +128,8 @@
               
                <section id=search_tire_text>
                    <p class=search_menu_text>Размер</p>
-                   <p class=search_menu_text>R</p>
-                   <p class=search_menu_text>Сезон</p>
+                   <p class=search_menu_text id=tire_text >R</p>
+                   <p class=search_menu_text id=tire_text_bot>Сезон</p>
                </section>
                     
                <section id=search_tire_drop>
@@ -110,12 +140,10 @@
                    <ul class=dropdown id=hor>
                    <li></li>
                    </ul>
-                   <ul class=dropdown>
-                   <li></li>
-                   </ul>
-                   <input type="checkbox"> <span>Лето</span>
-                   <input type="checkbox"> <span>Зима</span>
-                   <input type="checkbox"> <span>Всесез</span>
+                   
+                   <div class=tire_chk id=tire_chk_top><input type="checkbox"> <span>лето</span></div>
+                   <div class=tire_chk><input type="checkbox"> <span>зима</span></div>
+                   <div class=tire_chk><input type="checkbox"> <span>всесез</span></div>
               
                </section>
                
@@ -159,7 +187,7 @@
            </section>
      </section>  
             <div class=clearfix></div>
-       <aside class="leftt">
+       <aside class="left">
        <h1 class="sidebar_header"><img src="img/icon/catalog.png">КАТАЛОГ ПРОДУКЦИИ:</h1>
        <h1 class="sidebar_header"><img src="img/icon/round.png">ШИНЫ</h1>
        <ul class="sidebar_list">

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Lucida Sans", "Arial Black", sans-serif;
+    font-family: "Lucida Sans", sans-serif;
     font-size: 12px;
 }
 
@@ -76,22 +76,8 @@ nav a{
     padding: 0 2px;
     text-decoration: underline;
 }
-
+/*header menu*/
 /*main menu*/
-.main_menu{
-    height: 33px;
-    width: 100%;
-    max-width: 908px;
-    margin-top:-3px;
-    background-image: linear-gradient(to bottom, #3a4046 0%,black 100%);
-    border-radius: 4px;
-}
-.main_menu *{
-    display: inline-block;
-    vertical-align: middle;
-}
-        
-
 .top_menu{
     margin: 0 50px;
 }
@@ -126,17 +112,131 @@ nav a{
     font-size: 12px;
     color: #0e5383;
     }
-/*main menu*/
+.main_menu{
+    height: 33px;
+    width: 100%;
+    max-width: 908px;
+    margin-top:-3px;
+    background-image: linear-gradient(to bottom, #3a4046 0%,black 100%);
+    border-radius: 4px;
+}
+.main_menu *{
+    display: inline-block;
+    vertical-align: middle;
+}
+  /*main menu*/
 
 /*main select*/
+
+.search_header{
+    position: absolute;
+    top:auto;
+    }
+
+#search_button{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
 .car_select, .tire_select, .disk_select{
-    height: 132px;
+    position: relative;
+    height: 133px;
+    margin: 10px 13px 16px 0;
     border: 1px solid #b0b0b1;
     border-radius: 26px;
+    font-size: 11px;
     float: left;
 }
 .car_select section, .tire_select section, .disk_select section{
     display: inline-block;
+    max-width: 180px;
+    margin-top: 10px;
+    float: left;
+}
+/*all select*/
+.dropdown{
+    height: 16px;
+    margin: 6px;
+    border-top:1px;
+    border-right: 1px;
+    border-bottom: 0;
+    border-left: 0;
+    border-style: solid;
+    border-color: #949494;
+    list-style: none;
+    display: block;
+    overflow: hidden;
 }
 
+.search_menu_text{
+    margin:10px;
+    height: 17px;
+    max-width: 72px;
+    font-size: 10px;
+    list-style: none;
+}
+.search_menu_text span{
+    font-size: 10px;
+    }
+/*all select*/
+/*car select*/
+/*header car select*/
+#center{ 
+    left: 40%;
+ }
+#disk{
+    position:absolute;
+    left: 5%;
+}
+#tire{
+    position: absolute;
+    right: 5%;
+}
+/*header car select*/
+/*style car select*/
+.car_select{
+    width: 412px;
+    }
+#search_car_disk_text, {
+    margin-left: 14px;
+    }
+#search_car_disk_drop .dropdown, #search_car_tire_drop .dropdown{
+    width: 100px;
+    }
 
+
+#search_car_disk_drop .year, #search_car_tire_drop .year{
+    width: 55px;
+}
+/*style car select*/
+
+/*tireselect*/
+.tire_select{
+    width: 190px;
+}
+.tire_select .dropdown{
+    width:50px;
+}
+/*tireselect*/
+
+.disk_select{
+    width: 264px;
+}
+#search_tire_drop{
+    width: 60px;
+}
+#search_tire_drop span{
+    font-size: 12px;
+}
+.tire_chk{
+    height: 15px;
+}
+#tire_chk_top{
+    margin-top: 7px;
+}
+#tire_text{
+    margin-top: -2px;
+}
+#tire_text_bot{
+    margin-top:-9px;
+}
