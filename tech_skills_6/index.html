@@ -38,7 +38,7 @@
             </ul>
             <section id=shop_cart> 
                 <img src="img/icon/shop_cart.png">
-                <p>Товаров <span id=digit>0</span> &nbsp; На сумму &nbsp;<span id=digit>0,00 грн.</span></p>
+                <p>Товаров <span id=money_digit>0</span> &nbsp; На сумму &nbsp;<span id=money_digit>0,00 грн.</span></p>
             </section>
         </section>
           <section class="main_select">
@@ -47,75 +47,75 @@
               <h2 class=h2_car id=disk>Диски</h2>
                <section id=search_car_disk_text>
                    <ul>
-                       <li class=search_menu_text>Марка <span>авто</span></li>
-                       <li class=search_menu_text>Модель <span>автомобиля</span></li>
-                       <li class=search_menu_text>Год выпуска <span>автомобиля</span></li>
-                       <li class=search_menu_text>Комплектация</li>
+                       <li class=search_menu_text id=oneraw>Марка <span>авто</span></li>
+                       <li class=search_menu_text id=tworaw>Модель <span>автомобиля</span></li>
+                       <li class=search_menu_text id=tworaw>Год выпуска <span>автомобиля</span></li>
+                       <li class=search_menu_text id=oneraw>Комплектация</li>
                    </ul>
                </section>
                  
                 <form id=search_car_disk_drop>
                    <select class="dropdown"> 
-                           <option>111</option>
-                           <option>111</option>
-                           <option>111</option>
-                           <option>111</option>
+                           <option label=xxx>
+                           <option label=xxx>
+                           <option label=xxx>
+                           <option label=xxx>
                    </select>
                          
                    <select class="dropdown">
-                           <option>222</option>
-                           <option>222</option>
-                           <option>222</option>
-                           <option>222</option>
+                           <option label=xxx>
+                           <option label=xxx>
+                           <option label=xxx>
+                           <option label=xxx>
                    </select>
                    <select class="year dropdown">
-                           <option>333</option>
-                           <option>333</option>
-                           <option>333</option>
-                           <option>333</option>
+                           <option label=xxx>
+                           <option label=xxx>
+                           <option label=xxx>
+                           <option label=xxx>
                     </select>
                    <select class=dropdown>
-                           <option>444</option>
-                           <option>444</option>
-                           <option>444</option>
-                           <option>444</option>
+                           <option label=xxx>                           
+                           <option label=xxx>
+                           <option label=xxx>
+                           <option label=xxx>
                    </select>
                </form>
                   <h2 class=h2_car id=tire>Шины</h2>
                   <section id=search_car_tire_text>
                    <ul>
-                   <li class=search_menu_text>Марка <span>авто</span></li>
-                   <li class=search_menu_text>Модель <span>автомобиля</span></li>
-                   <li class=search_menu_text>Год выпуска <span>автомобиля</span></li>
-                   <li class=search_menu_text>Комплектация</li>
+                       <li class=search_menu_text id=oneraw>Марка <span>авто</span></li>
+                       <li class=search_menu_text id=tworaw>Модель <span>автомобиля</span></li>
+                       <li class=search_menu_text id=tworaw>Год выпуска <span>автомобиля</span></li>
+                       <li class=search_menu_text id=oneraw>Комплектация</li>
                    </ul>
                   </section>
                   
                   <form id=search_car_tire_drop>
                   <select class="dropdown"> 
-                           <option>111</option>
-                           <option>111</option>
-                           <option>111</option>
-                           <option>111</option>
+                           <option label="yyy">
+                           <option label="yyy">
+                           <option label="yyy">
+                           <option label="yyy">
                    </select>
                          
                    <select class="dropdown">
-                           <option>222</option>
-                           <option>222</option>
-                           <option>222</option>
-                           <option>222</option>
+                           <option label="yyy">
+                           <option label="yyy">
+                           <option label="yyy">
+                           <option label="yyy">
                    </select>
                    <select class="dropdown year">
-                           <option>333</option>
-                           <option>333</option>
-                           <option>333</option>
-                           <option>333</option>
+                           <option label="yyy">
+                           <option label="yyy">
+                           <option label="yyy">
+                           <option label="yyy">
                    </select>
                    <select class=dropdown>
-                           <option>444</option>
-                           <option>444</option>
-                           <option>444</option>
-                           <option>444</option>
+                           <option label="yyy">
+                           <option label="yyy">
+                           <option label="yyy">
+                           <option label="yyy">
                    </select>
                    
                </form>
@@ -214,60 +214,77 @@
        </ul> 
     </aside>        
             
+            <section class=goods>
+            <figure class="goods_inner">
+                <figcaption class=goods_name>Goodyear<br> <span>Ultra Grip Extreme</span></figcaption> 
+                    <box class=goods_img><img src="img/tire/gy_ug_e.png"></box><figcaption class=goods_price>90.00 грн.</figcaption>
+             </figure>
+                
+           <figure class="goods_inner">
+                <figcaption class=goods_name>Nokian <br><span>Hakkapelita R</span></figcaption> 
+                    <box class=goods_img><img src="img/tire/nok_hak_r.png"></box><figcaption class=goods_price>115.00 грн.</figcaption>
+           </figure>
+                
+           <figure class="goods_inner">
+                <figcaption class=goods_name>Hankook<br> <span>K 708 155/65 R14</span></figcaption> 
+                    <box class=goods_img><img src="img/tire/hank708.png"></box><figcaption class=goods_price>393.00 грн.</figcaption>
+           </figure>
+                <box>
+           <figure class="goods_inner">
+                <figcaption class=goods_name>Goodyear<br> <span>Ultra Grip Extreme</span></figcaption> 
+                    <box class=goods_img><img src="img/tire/gy_ug_e.png"></box><figcaption class=goods_price>90.00 грн.</figcaption>
+           </figure>
+                
+           <figure class="goods_inner">
+                <figcaption class=goods_name>Nokian<br> <span>Hakkapelita R</span></figcaption> 
+                <box class=goods_img><img src="img/tire/nok_hak_r.png"></box>
+                <figcaption class=goods_price>115.00 грн.</figcaption>
+           </figure>
+                
+           <figure class="goods_inner">
+                <figcaption class=goods_name>Hankook <br><span>K 708 155/65 R14</span></figcaption> 
+                    <box class=goods_img><img src="img/tire/hank708.png"></box><figcaption class=goods_price>393.00 грн.</figcaption>
+           </figure>
+                
+            <figure class="goods_inner">
+                <figcaption class=goods_name>Goodyear <br><span>Ultra Grip Extreme</span></figcaption> 
+                    <box class=goods_img><img src="img/tire/gy_ug_e.png"></box><figcaption class=goods_price>90.00 грн.</figcaption>
+             </figure>
+                
+            <figure class="goods_inner">
+                <figcaption class=goods_name>Nokian<br> <span>Hakkapelita R</span></figcaption> 
+                    <box class=goods_img><img src="img/tire/nok_hak_r.png"></box>
+                    <figcaption class=goods_price>115.00 грн.</figcaption>
+            </figure>
+                
+                <figure class="goods_inner">
+                <figcaption class=goods_name>Hankook <br><span>K 708 155/65 R14</span></figcaption> 
+                    <box class=goods_img><img src="img/tire/hank708.png"></box>
+                    <figcaption class=goods_price>393.00 грн.</figcaption>
+                </figure>
+                 
+            </section>
+            
             <aside class="right">
                <h1 class="sidebar_header h1shadow"><img src="img/icon/round.png">БРЕНДЫ:</h1>
                
-                <h1 class="sidebar_header"><img src="img/icon/round.png">ШИНЫ</h1>
+                <h2 class="sidebar_header"><img src="img/icon/round.png">ШИНЫ</h2>
                 <form>
                 
-                <input type="checkbox" class="chkbox_blue"><p>Бренд 1</p>
-                <input type="checkbox" class="chkbox_blue"><p>Бренд 2</p>
-                <input type="checkbox" class="chkbox_blue"><p>Бренд 3</p>
-                <h1 class="sidebar_header"><img src="img/icon/round.png">ДИСКИ</h1>
-                <input type="checkbox" class="chkbox_blue"><p>Бренд 1</p>
-                <input type="checkbox" class="chkbox_blue"><p>Бренд 2</p>
-                <input type="checkbox" class="chkbox_blue"><p>Бренд 3</p>
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 1</p><br>
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 2</p><br>
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 3</p><br>
+                <h2 class="sidebar_header"><img src="img/icon/round.png">ДИСКИ</h2><br>
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 1</p><br>
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 2</p><br>
+                <input type="checkbox" class="chkbox_blue"><p>Бренд 3</p><br>
                 <input type=submit value=ВЫБРАТЬ>
                 </form>
             </aside>
             
-            <section class=goods>
-                <figure class="goods_inner">
-                <figcaption class=goods_name>Goodyear <span>Ultra Grip Extreme</span></figcaption> <img src="img/tire/gy_ug_e.png"><figcaption class=goods_price>90.00 грн.</figcaption>
-                </figure>
-                
-                <figure class="goods_inner">
-                <figcaption class=goods_name>Nokian <span>Hakkapelita R</span></figcaption> <img src="img/tire/nok_hak_r.png"><figcaption class=goods_price>115.00 грн.</figcaption>
-                </figure>
-                
-                <figure class="goods_inner">
-                <figcaption class=goods_name>Hankook <span>K 708 155/65 R14</span></figcaption> <img src="img/tire/hank708.png"><figcaption class=goods_price>393.00 грн.</figcaption>
-                </figure>
-                
-                <figure class="goods_inner">
-                <figcaption class=goods_name>Goodyear <span>Ultra Grip Extreme</span></figcaption> <img src="img/tire/gy_ug_e.png"><figcaption class=goods_price>90.00 грн.</figcaption>
-                </figure>
-                
-                <figure class="goods_inner">
-                <figcaption class=goods_name>Nokian <span>Hakkapelita R</span></figcaption> <img src="img/tire/nok_hak_r.png"><figcaption class=goods_price>115.00 грн.</figcaption>
-                </figure>
-                
-                <figure class="goods_inner">
-                <figcaption class=goods_name>Hankook <span>K 708 155/65 R14</span></figcaption> <img src="img/tire/hank708.png"><figcaption class=goods_price>393.00 грн.</figcaption>
-                </figure>
-                
-                <figure class="goods_inner">
-                <figcaption class=goods_name>Goodyear <span>Ultra Grip Extreme</span></figcaption> <img src="img/tire/gy_ug_e.png"><figcaption class=goods_price>90.00 грн.</figcaption>
-                </figure>
-                
-                <figure class="goods_inner">
-                <figcaption class=goods_name>Nokian <span>Hakkapelita R</span></figcaption> <img src="img/tire/nok_hak_r.png"><figcaption class=goods_price>115.00 грн.</figcaption>
-                </figure>
-                
-                <figure class="goods_inner">
-                <figcaption class=goods_name>Hankook <span>K 708 155/65 R14</span></figcaption> <img src="img/tire/hank708.png"><figcaption class=goods_price>393.00 грн.</figcaption>
-                </figure>
-            </section>
+            <div class=clearfix></div>
+            
+            
             <section class=main_footer>
                 <a href="/">&lt;&lt;</a>
                 <a href="/">&lt;</a>

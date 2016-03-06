@@ -13,6 +13,9 @@ a{
     content: '';
     clear: both;
 }
+body{
+    max-width: 909px;
+}
 /*header menu*/
 header{
     max-width: 909px;
@@ -116,7 +119,7 @@ nav a{
     height: 33px;
     width: 100%;
     max-width: 908px;
-    margin-top:-3px;
+    margin-top:3px;
     background-image: linear-gradient(to bottom, #3a4046 0%,black 100%);
     border-radius: 4px;
 }
@@ -138,6 +141,7 @@ nav a{
     bottom: 5px;
     right: 5px;
 }
+
 .car_select, .tire_select, .disk_select{
     position: relative;
     height: 133px;
@@ -147,34 +151,52 @@ nav a{
     font-size: 11px;
     float: left;
 }
-.car_select section, .tire_select section, .disk_select section{
-    display: inline-block;
-    max-width: 180px;
-    margin-top: 10px;
+.disk_select{
+    margin-right:0;
+}
+.car_select section, .tire_select section, .disk_select section, .car_select form, .tire_select form, .disk_select form{
+    display: inline;
+    max-width: 100px;
+    margin-top: 20px;
     float: left;
+}
+.car_select section, .tire_select section, .disk_select section{
+    margin-left:18px;
+}
+.car_select form{
+    margin-right: 16px;
 }
 /*all select*/
 .dropdown{
     height: 16px;
-    margin: 6px;
+    margin: 6px 18px 6px 0;
     border-top:1px;
     border-right: 1px;
     border-bottom: 0;
     border-left: 0;
     border-style: solid;
     border-color: #949494;
-    list-style: none;
+    background: url(../img/icon/menu_pointer.png) no-repeat right center;
     display: block;
-    overflow: hidden;
-}
+    }
+
 
 .search_menu_text{
-    margin:10px;
-    height: 17px;
     max-width: 72px;
     font-size: 10px;
     list-style: none;
 }
+#oneraw{
+    padding-top: 6px;
+    height:14px;
+    line-height: 16px;
+}
+#tworaw{
+    height:14px;
+    padding-top: 1px;
+    line-height: 0.9;
+    margin-top: 8px;
+    }
 .search_menu_text span{
     font-size: 10px;
     }
@@ -203,8 +225,6 @@ nav a{
 #search_car_disk_drop .dropdown, #search_car_tire_drop .dropdown{
     width: 100px;
     }
-
-
 #search_car_disk_drop .year, #search_car_tire_drop .year{
     width: 55px;
 }
@@ -239,4 +259,37 @@ nav a{
 }
 #tire_text_bot{
     margin-top:-9px;
+}
+/*aside*/
+.left, .right {
+    height: 630px;
+    max-width: 184px;
+    float: left;
+}
+.right input, .right p{
+    display: inline;
+}
+/*aside*/
+.goods{
+    width: 526px;
+    background-color: antiquewhite;
+    float: left;
+    overflow: hidden;
+}
+.goods_inner{
+    width: 30%;
+    text-align: center;
+    float: left;
+}
+
+.goods_img{
+    display: block;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+}
+.goods_inner img{
+    margin:0 auto;
 }
