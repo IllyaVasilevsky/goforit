@@ -188,29 +188,35 @@
      </section>  
             <div class=clearfix></div>
        <aside class="left">
-       <h1 class="sidebar_header"><img src="img/icon/catalog.png">КАТАЛОГ ПРОДУКЦИИ:</h1>
-       <h1 class="sidebar_header"><img src="img/icon/round.png">ШИНЫ</h1>
+       <h1 class="sidebar_header h1shadow">
+          <wrapper class=aside_icon><img src="img/icon/catalog.png"></wrapper>
+          КАТАЛОГ ПРОДУКЦИИ:
+          </h1>
+          
+           <h1 class="sidebar_header">
+           <div class=round><div class=round_in></div></div>ШИНЫ
+           </h1>
        <ul class="sidebar_list">
-           <li>Наименование 1</li>
-           <li>Наименование 2</li>
-           <li>Наименование 3</li>
-           <li>Наименование 4</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 1</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 2</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 3</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 4</li>
        </ul>
        
-        <h1 class="sidebar_header"><img src="img/icon/round.png">ДИСКИ</h1>
+        <h1 class="sidebar_header"><div class=round><div class=round_in></div></div>ДИСКИ</h1>
        <ul class="sidebar_list">
-           <li>Наименование 1</li>
-           <li>Наименование 2</li>
-           <li>Наименование 3</li>
-           <li>Наименование 4</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 1</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 2</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 3</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 4</li>
        </ul> 
        
-       <h1 class="sidebar_header"><img src="img/icon/round.png">БОЛТЫ</h1>
+       <h1 class="sidebar_header"><div class=round><div class=round_in></div></div>БОЛТЫ</h1>
        <ul class="sidebar_list">
-           <li>Наименование 1</li>
-           <li>Наименование 2</li>
-           <li>Наименование 3</li>
-           <li>Наименование 4</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 1</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 2</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 3</li>
+           <li><div class=marker><div class=marker_in></div></div>Наименование 4</li>
        </ul> 
     </aside>        
             
@@ -229,7 +235,7 @@
                 <figcaption class=goods_name>Hankook<br> <span>K 708 155/65 R14</span></figcaption> 
                     <box class=goods_img><img src="img/tire/hank708.png"></box><figcaption class=goods_price>393.00 грн.</figcaption>
            </figure>
-                <box>
+               
            <figure class="goods_inner">
                 <figcaption class=goods_name>Goodyear<br> <span>Ultra Grip Extreme</span></figcaption> 
                     <box class=goods_img><img src="img/tire/gy_ug_e.png"></box><figcaption class=goods_price>90.00 грн.</figcaption>
@@ -266,19 +272,22 @@
             </section>
             
             <aside class="right">
-               <h1 class="sidebar_header h1shadow"><img src="img/icon/round.png">БРЕНДЫ:</h1>
+               <h1 class="sidebar_header h1shadow">
+               <div class=round><div class=round_in></div></div>БРЕНДЫ:</h1>
                
-                <h2 class="sidebar_header"><img src="img/icon/round.png">ШИНЫ</h2>
+                <h2 class="sidebar_header right_h">
+                <div class=round><div class=round_in></div></div>ШИНЫ</h2>
                 <form>
                 
                 <input type="checkbox" class="chkbox_blue"><p>Бренд 1</p><br>
                 <input type="checkbox" class="chkbox_blue"><p>Бренд 2</p><br>
                 <input type="checkbox" class="chkbox_blue"><p>Бренд 3</p><br>
-                <h2 class="sidebar_header"><img src="img/icon/round.png">ДИСКИ</h2><br>
+                <h2 class="sidebar_header right_h"><div class=round>
+                <div class=round_in></div></div>ДИСКИ</h2>
                 <input type="checkbox" class="chkbox_blue"><p>Бренд 1</p><br>
                 <input type="checkbox" class="chkbox_blue"><p>Бренд 2</p><br>
                 <input type="checkbox" class="chkbox_blue"><p>Бренд 3</p><br>
-                <input type=submit value=ВЫБРАТЬ>
+                <input type=submit value=ВЫБРАТЬ id=submit_right>
                 </form>
             </aside>
             
@@ -286,17 +295,27 @@
             
             
             <section class=main_footer>
-                <a href="/">&lt;&lt;</a>
+                <box class=footer_pages><a href="/">&lt;&lt;</a>
                 <a href="/">&lt;</a>
                 <a href="/">1...</a>
                 <a href="/">2...</a>
                 <a href="/">3...</a>
                 <a href="/">4...</a>
                 <a href="/">&gt;</a>
-                <a href="/">&gt;&gt;</a>
-                <div class="tires_logo_footer"><img src="img/brand/toyo.png"><img src="img/brand/bridge.png"><img src="img/brand/conti.png"><img src="img/brand/cooper.png"><img src="img/brand/avon.png"><img src="img/brand/tire_factory.png"><img src="img/brand/pirelli.png"><img src="img/brand/dunlop.png"></div>
+                <a href="/">&gt;&gt;</a></box>
+                <div class="tires_logo_footer">
+                  <img src="img/brand/toyo.png">
+                  <img src="img/brand/bridge.png">
+                  <img src="img/brand/conti.png">
+                  <img src="img/brand/cooper.png">
+                  <img src="img/brand/avon.png">
+                  <img src="img/brand/tire_factory.png">
+                  <img src="img/brand/pirelli.png">
+                  <img src="img/brand/dunlop.png">
+                </div>
             </section>
         </main>
+        <div class=clearfix></div>
         <footer>
             <a>О Компании</a>
             <a>Доставка</a>
