@@ -14,14 +14,15 @@ a{
     clear: both;
 }
 body{
-    margin:18px 45px 0;
+    margin: 16px 45px 0;
     max-width: 911px;
 }
 /*header menu*/
 header{
     max-width: 909px;
     height: 34px;
-    margin: 17px 0 0 0;
+    margin: 16px 0 0 0;
+    padding-left:9px;
 }
 header *{
     display: inline-block;
@@ -30,8 +31,9 @@ header *{
 }
 /*phones*/
 .phones p{
-    height:20px;
-    line-height: 20px;
+    height: 20px;
+    line-height: 24px;
+    font-family: "Arial";
 }
 .phone_icon{
     height: 20px;
@@ -43,10 +45,10 @@ header *{
 
 /*login*/
 .login{
-    height: 24px;
-    max-width: 493px;
+    height: 26px;
+    width: 484px;
     padding: 0 5px;
-    margin: 0 17px;
+    margin: 0 14px;
     background-color: antiquewhite;
     vertical-align: middle;
     background-image: linear-gradient(to bottom, #1f6787 0%,#0d3458 100%);
@@ -54,7 +56,9 @@ header *{
 }
 .login input{
     max-width: 113px;
-    font-size: 11px;
+    height: 16px;
+    padding-left: 1px;
+    font-size: 10px;
     font-family: "Lucida Sans";
     border: 0;
 }
@@ -72,12 +76,14 @@ header *{
 
 nav{
     height: 19px;
+    width: 70px;
     border: 1px solid #c0c7c9;
-    border-radius: 19px;    
+    border-radius: 19px;
+    padding: 0 0 0 7px;
 }
 nav a{
-    margin-top: -9px;
-    padding: 0 2px;
+    margin-top: -14px;
+    padding: 1px 0px 0 2px;
     text-decoration: underline;
 }
 /*header menu*/
@@ -203,6 +209,11 @@ nav a{
     }
 /*all select*/
 /*car select*/
+
+/*tire_select*/
+#hor{
+    display: inline-block;
+}
 /*header car select*/
 #center{ 
     left: 40%;
@@ -239,12 +250,21 @@ nav a{
     width:50px;
 }
 /*tireselect*/
-
-.disk_select{
-    width: 264px;
-}
 #search_tire_drop{
-    width: 60px;
+    max-width: 150px;
+}
+#search_tire_drop .dropdown{
+    margin: 3px;
+}
+#search_tire_text #f_raw{
+    margin: 9px 2px;
+    height: 14px;
+}
+#search_tire_text #s_raw{
+    text-align: right;
+}
+#search_tire_text #t_raw{
+       margin: 5px;
 }
 #search_tire_drop span{
     font-size: 12px;
@@ -256,10 +276,34 @@ nav a{
     margin-top: 7px;
 }
 #tire_text{
-    margin-top: -2px;
+    margin-top: 2px;
 }
 #tire_text_bot{
     margin-top:-9px;
+}
+
+.disk_select{
+    width: 264px;
+}
+.disk_select .dropdown{
+    width: 50px;
+    margin: 0 0 14px;
+}
+#search_disk_et{
+    margin-top: 1px;
+    border-left: 1px solid #bdc6ca;
+    padding-left: 11px;
+}
+#search_disk_et .dropdown{
+    margin-bottom: 7px;
+}
+#search_disk_et .dropdown:last-child{
+    margin-bottom: 0;
+}
+
+#search_disk_text .search_menu_text{
+    margin: 1px 0 5px;
+    line-height: 10px;
 }
 /*aside*/
 .left, .right {
@@ -299,7 +343,7 @@ nav a{
     border-radius: 15px;
 }
 .goods_inner img{
-    margin:0 auto;
+    margin:8px auto;
 }
 
 .aside_icon{
@@ -355,6 +399,7 @@ nav a{
     }
 .main_footer{
     position: relative;
+    margin: 42px 0 26px;
 }
 .footer_pages{
     position: absolute;

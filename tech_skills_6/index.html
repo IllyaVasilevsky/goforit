@@ -127,17 +127,22 @@
               <h1 class=search_header id=left>Поиск шин</h1>
               
                <section id=search_tire_text>
-                   <p class=search_menu_text>Размер</p>
-                   <p class=search_menu_text id=tire_text >R</p>
-                   <p class=search_menu_text id=tire_text_bot>Сезон</p>
-               </section>
+                   <ul><li class=search_menu_text id="f_raw">Размер</li>
+                   <li class=search_menu_text id="s_raw" >R</li>
+                   <li class=search_menu_text id="t_raw">Сезон:</li>
+                   </ul>
+                   </section>
                     
                <form id=search_tire_drop>
                   
-                   <select class=dropdown>
+                   <select class=dropdown id=hor>
                    <option></option>
                    </select>
-                   <select class=dropdown id=hor>
+                   <p id=hor>/</p>
+                    <select class=dropdown id=hor>
+                   <option></option>
+                   </select>
+                   <select class=dropdown>
                    <option></option>
                    </select>
                    
@@ -154,29 +159,35 @@
               <h1 class=search_header id=left>Поиск дисков</h1>
               
                <section id=search_disk_text>
-                   <p class=search_menu_text>Диаметр <span>диска:</span></p>
-                   <p class=search_menu_text>Количество <span>крепежных отверстий</span></p>
-                   <p class=search_menu_text>Диаметр <span>расположения крепежных отверстий:</span></p>
+                   <nobr><p class=search_menu_text>Диаметр <span>диска:</span></p></nobr>
+                   <p class=search_menu_text>Количество<br> <span>крепежных отверстий</span></p>
+                   <p class=search_menu_text>Диаметр<br> <span>расположения крепежных отверстий:</span></p>
                </section>
                     
              <form id=search_disk_drop>
-                   <select class=dropdown>
-                   <option></option>
-                   </select>
-                   <select class=dropdown>
-                   <option></option>
-                   </select>
-                   <select class=dropdown>
-                   <option></option>
-                   </select>
+               <select class=dropdown>
+                   <option>www</option>
+                   <option>www</option>
+                   <option>www</option>
+                </select>
+                 <select class=dropdown>
+                   <option>www</option>
+                   <option>www</option>
+                   <option>www</option>
+                 </select>
+                 <select class=dropdown>
+                   <option>www</option>
+                   <option>www</option>
+                   <option>www</option>
+                 </select>
              </form>    
               
               <section id=search_disk_et>
-                   <p class=search_menu_text>ДЦО <span>Диаметр центрального отверстия:</span></p>
+                   <p class=search_menu_text>ДЦО <br><span>Диаметр центрального отверстия:</span></p>
                          <select class=dropdown>
                          <option></option>
                          </select>
-                   <p class=search_menu_text>ЕТ<span>(вылет диска):</span></p>
+                   <p class=search_menu_text>ЕТ<br><span>(вылет диска):</span></p>
                    <select class=dropdown>
                    <option></option>
                    </select>
