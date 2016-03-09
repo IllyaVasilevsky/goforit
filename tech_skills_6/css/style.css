@@ -56,6 +56,9 @@ main{
     vertical-align: middle;
     background-image: linear-gradient(to bottom, #1f6787 0%,#0d3458 100%);
     border-radius: 3px;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(104,104,104,1);
+-moz-box-shadow: 3px 3px 3px 0px rgba(104,104,104,1);
+box-shadow: 3px 3px 3px 0px rgba(104,104,104,1);
 }
 .login input{
     max-width: 113px;
@@ -69,11 +72,13 @@ main{
    color: white;
    background-color: rgba(255,255,255,0);
    text-decoration: underline;
+   font-family: "Lucida Sans";
 }
 .login a{
     font-size: 12px;
     color: #bfbfbf;
     text-decoration: underline;
+    margin-left:37px;
 }
 /*login*/
 
@@ -83,6 +88,9 @@ nav{
     border: 1px solid #c0c7c9;
     border-radius: 19px;
     padding: 0 0 0 6px;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(104,104,104,1);
+-moz-box-shadow: 1px 1px 1px 0px rgba(104,104,104,1);
+box-shadow: 1px 1px 1px 0px rgba(104,104,104,1);
 }
 nav a{
     margin-top: -14px;
@@ -133,6 +141,9 @@ nav a{
     margin-top:3px;
     background-image: linear-gradient(to bottom, #3a4046 0%,black 100%);
     border-radius: 4px;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(104,104,104,1);
+-moz-box-shadow: 3px 3px 3px 0px rgba(104,104,104,1);
+box-shadow: 3px 3px 3px 0px rgba(104,104,104,1);
 }
 .main_menu *{
     display: inline-block;
@@ -146,26 +157,34 @@ nav a{
     position: absolute;
     font-family: "Arial";
     font-weight: 900;
+    color:#154468;
     }
-
+.main_select span{
+    color: grey;
+}
 #search_button{
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: 9px;
+    right: 17px;
+    border: none;
+    background: none;
+    font-style: italic;
+    font-size: 14px;
+    color: #154467;
+    text-decoration: underline;
 }
 
 .car_select, .tire_select, .disk_select{
     position: relative;
     height: 133px;
-    margin: 10px 13px 16px 0;
+    margin: 10px 13px 11px 0;
     border: 1px solid #b0b0b1;
     border-radius: 19px;
     font-size: 11px;
     float: left;
+    
 }
-.disk_select{
-    margin-right:0;
-}
+
 .car_select section, .tire_select section, .disk_select section, .car_select form, .tire_select form, .disk_select form{
     display: inline;
     max-width: 100px;
@@ -173,7 +192,7 @@ nav a{
     float: left;
 }
 .car_select form, .tire_select form, .disk_select form{
-    margin-top: 16px;
+    margin-top: 13px;
 }
 .car_select section, .tire_select section, .disk_select section{
     margin-left:18px;
@@ -190,10 +209,10 @@ nav a{
 .dropdown{
     height: 16px;
     margin: 6px 18px 6px 0;
-    border-top:1px;
-    border-right: 1px;
+    border-top: 2px;
+    border-right: 0px;
     border-bottom: 0;
-    border-left: 0;
+    border-left: 2px;
     border-style: solid;
     border-color: #949494;
     background: url(../img/icon/menu_pointer.png) no-repeat right center;
@@ -243,20 +262,24 @@ nav a{
     right: 19px;
     }
 #left{
-    left: 2px;
-    top: 3px;
+    left: 9px;
+    top: 1px;
+    font-size: 13px;
 }
 /*header car select*/
 /*style car select*/
 .car_select{
     width: 413px;
     margin: 13px 14px 0 4px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(104,104,104,1);
+-moz-box-shadow: 5px 5px 5px 0px rgba(104,104,104,1);
+box-shadow: 5px 5px 5px 0px rgba(104,104,104,1);
     }
 #search_car_disk_text, {
     margin-left: 14px;
     }
 #search_car_disk_drop .dropdown, #search_car_tire_drop .dropdown{
-    width: 100px;
+    width: 104px;
     }
 #search_car_disk_drop .year, #search_car_tire_drop .year{
     width: 55px;
@@ -265,7 +288,13 @@ nav a{
 
 /*tireselect*/
 .tire_select{
-    width: 190px;
+    width: 191px;
+    height: 129px;
+    margin-top: 12px;
+    padding-top: 6px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(150,150,150,1);
+-moz-box-shadow: 5px 5px 5px 0px rgba(150,150,150,1);
+box-shadow: 5px 5px 5px 0px rgba(150,150,150,1);
 }
 .tire_select .dropdown{
     width:50px;
@@ -275,26 +304,33 @@ nav a{
     max-width: 150px;
 }
 #search_tire_drop .dropdown{
-    margin: 3px;
+    margin: 3px 2px 5px;
 }
 #search_tire_text #f_raw{
-    margin: 9px 2px;
+    margin: 3px -6px;
     height: 14px;
 }
 #search_tire_text #s_raw{
     text-align: right;
+    margin: 8px 5px 6px 0px;
 }
 #search_tire_text #t_raw{
-       margin: 5px;
+       margin: 6px 10px 0 -4px;
 }
 #search_tire_drop span{
     font-size: 12px;
 }
 .tire_chk{
-    height: 15px;
-}
+    height: 14px;
+    }
+.tire_chk input{
+    height: 12px;
+    }
 #tire_chk_top{
     margin-top: 7px;
+}
+#tire_chk input{
+    height:12px;
 }
 #tire_text{
     margin-top: 2px;
@@ -304,27 +340,35 @@ nav a{
 }
 
 .disk_select{
-    width: 264px;
+    width: 267px;
+    margin: 11px 3px 0 -4px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(150,150,150,1);
+-moz-box-shadow: 5px 5px 5px 0px rgba(150,150,150,1);
+box-shadow: 5px 5px 5px 0px rgba(150,150,150,1);
 }
 .disk_select .dropdown{
     width: 50px;
-    margin: 0 0 14px;
+    margin: 9px 0 15px 18px;
 }
 #search_disk_et{
-    margin-top: 1px;
+    margin-top: 5px;
     border-left: 1px solid #bdc6ca;
-    padding-left: 11px;
+    padding-left: 10px;
+}
+#search_disk_et .search_menu_text{
+    line-height: 9px;
 }
 #search_disk_et .dropdown{
-    margin-bottom: 7px;
+    margin: 3px 0 8px 1px;
+    width: 58px;
 }
 #search_disk_et .dropdown:last-child{
     margin-bottom: 0;
 }
 
 #search_disk_text .search_menu_text{
-    margin: 1px 0 5px;
-    line-height: 10px;
+    margin: 5px 0 7px;
+    line-height: 9px;
 }
 /*aside*/
 .left, .right {
@@ -348,25 +392,25 @@ nav a{
 .goods{
     width: 524px;
     height: 628px;
-    margin: 0 10px 0 11px;
-    background-color: black;
+    margin: 1px 10px 0 11px;
+    background-image: linear-gradient(to bottom, #e5e7e8 0%,#93a7b0 100%);
     float: left;
     overflow: hidden;
 }
 .goods_inner{
     text-align: center;
-    margin: 5px -7px 8px 4px;
+    margin: 5px -7px 7px 4px;
     float: left;
 }
 .goods_name{
-    margin: 12px 12px 0px 20px;
+    margin: 12px 12px 3px 20px;
     line-height: 12px;
     color: #2e6f8c;
     font-size: 15px;
     font-weight: bold;
 }    
 .goods_price{
-    margin: 6px 0 0 19px;
+    margin: 4px 0 0 19px;
     font-size: 16px;
     font-family: "Arial";
     color: #114165;
@@ -381,7 +425,7 @@ nav a{
         display: block;
     width: 136px;
     height: 127px;
-    margin: 1px 13px 0px 19px;
+    margin: 2px 13px 0px 19px;
     background-color: white;
     border: 1px solid #aab3b6;
     border-radius: 7px
@@ -415,7 +459,10 @@ nav a{
 .h1shadow{
     height: 22px;
     max-width: 168px;
-    margin: 1px 0 12px 0;
+    margin: 3px 0 12px 0;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(104,104,104,1);
+-moz-box-shadow: 1px 1px 1px 0px rgba(104,104,104,1);
+box-shadow: 1px 1px 1px 0px rgba(104,104,104,1);
     }
 .sidebar_list{
     line-height: 25px;
@@ -424,13 +471,25 @@ nav a{
     text-align: center;
     list-style: none;
     margin-bottom: -1px;
+    color: #465961;
 }
+.sidebar_list li:hover{
+    padding-left: 19px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    color: #0c3256;
+}
+.sidebar_list li:hover .marker{
+    background-color: #0c3256;
+}
+
 .right_h{
     width: 105px;
     margin: 3px 13px -3px;
 }
 .right .h1shadow{
-    margin: 3px 0px 12px 0;
+    margin: 5px 0px 12px 0;
     width: 149px;
     line-height: 20px;
 }
@@ -457,7 +516,7 @@ nav a{
     }
 .main_footer{
     position: relative;
-    margin: 42px 0 26px;
+    margin: 38px 0 24px;
 }
 .footer_pages{
     position: absolute;
@@ -474,12 +533,11 @@ nav a{
 }
 .tires_logo_footer{
     text-align: center;
-    margin: -5px 0 0 6px;
+    margin: -1px 0 0 0px;
     z-index: 2;
 }
 .tires_logo_footer img{
-    vertical-align: -1px;
-    margin: 0 6px;
+    margin: 0 5px;
 }
 
 footer{
@@ -492,6 +550,10 @@ footer a{
     margin: 12px 0 18px; 
     padding: 0 12px;
     border-left: 2px solid #8d989f;
+    color: white;
+}
+footer a:hover{
+    color: #52abcb;
 }
 footer a:first-child {
     border: none;
