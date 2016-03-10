@@ -14,7 +14,7 @@ a{
     clear: both;
 }
 body{
-    margin: 14px 45px 0;
+    margin: 14px auto 0;
     max-width: 911px;
 }
 /*header menu*/
