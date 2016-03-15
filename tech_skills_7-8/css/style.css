@@ -22,10 +22,11 @@ body{
     background-color: #734f81;
 }
 header{
+    position: relative;
     background-image: url(../img/background.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    
+    height:845px;
 }
 .header_top_menu, .slider{
     position: relative;
@@ -65,4 +66,114 @@ header{
 }
 .header_menu .menutext:hover{
     border-bottom: 2px solid #edbfff;
+}
+
+.slider_bg{
+    position: relative;
+    height: 400px;
+}
+.slider *{
+    display: inline-block;
+    vertical-align: middle;
+    color:white;
+}
+.slider_text{
+    max-width: 510px;
+    margin-right:190px;
+}
+.slider_img{
+    margin-top:-20px;
+    position: relative;
     }
+.play_img{
+    position: absolute;
+    top:34%;
+    right:28%;
+    z-index:2;
+}
+.slider_p{
+    font-size:18px;
+    }
+
+.slider_header1{
+    font-size: 60px;
+}
+.slider_header2{
+    font-size: 32px;
+    color: #edbfff;
+}
+.slider_back_img{
+    position: absolute;
+    left:-75px;
+    top: 70px;
+    }
+.slider_face_img{
+    position: inherit;
+    z-index:2;
+}
+.slider_arrow{
+    position: absolute;
+    margin:0 auto;
+    }
+.left_arrow{
+    position: absolute;
+    top: 50%;
+    left:-290px;
+}
+.right_arrow{
+    position: absolute;
+    top: 50%;
+    right:-290px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    }
+
+.slider_round{
+    display: inline-block;
+    margin-left:5px;
+    height:14px;
+    width:14px;
+    background-color: rgba( 0, 0, 0, 0.5);
+    border:2px solid rgba( 0, 0, 0, 0.5);
+    border-radius: 15px;
+    }
+.slider_round_box{
+    position: absolute;
+    bottom: -24%;
+    right: 49%; 
+}
+
+.about_bg{
+    height: 390px;
+    background-image: linear-gradient(to bottom, #745083 0%,#322539 100%);
+}
+.about{
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    color:white;
+}
+.about_box{
+    position: relative;
+    width: 280px;
+    height: 190px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    float:left;
+    overflow: hidden;
+}
+.about_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about_header{
+        font-size: 30px;
+    }
+.about_p{
+    max-width: 225px;
+    font-size: 16px;
+}
